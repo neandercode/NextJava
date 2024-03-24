@@ -16,14 +16,22 @@ class Dog extends Animal {
     }
 }
 
+class Cat extends Animal {
+    public void animalSound() {
+        System.out.println("The cat says: Don't touch me!");
+    }
+}
+
 public class Polymorphism {
     public static void main(String[] args) {
         Animal myAnimal = new Animal();
         Animal myPig = new Pig();
         Animal myDog = new Dog();
+        Animal myCat = new Cat();
 
         myAnimal.animalSound();
         myPig.animalSound();
         myDog.animalSound();
+        myCat.animalSound();
     }
 }
