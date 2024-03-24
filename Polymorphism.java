@@ -22,16 +22,24 @@ class Cat extends Animal {
     }
 }
 
+class Bird extends Animal {
+    public void animalSound() {
+        System.out.println("The bird says: Chirp chirp");
+    }
+}
+
 public class Polymorphism {
     public static void main(String[] args) {
         Animal myAnimal = new Animal();
         Animal myPig = new Pig();
         Animal myDog = new Dog();
         Animal myCat = new Cat();
+        Animal myBird = new Bird();
 
         myAnimal.animalSound();
         myPig.animalSound();
         myDog.animalSound();
         myCat.animalSound();
+        myBird.animalSound();
     }
 }
