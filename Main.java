@@ -1,13 +1,13 @@
-public class Main { 
-  enum Level {
-    LOW,
-    MEDIUM,
-    HIGH
-  }
-
-  public static void main(String[] args) { 
-    Level myVar = Level.MEDIUM; 
-    System.out.println(myVar); 
-  } 
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
 }
 
+public class Main {
+  public static void main(String[] args) {
+    for (Level myVar : Level.values()) {
+      System.out.println(myVar);
+    }
+  }
+}
