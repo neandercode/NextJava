@@ -1,12 +1,8 @@
-import java.util.Scanner;
+import java.time.LocalDate;
 
 public class Maine {
     public static void main(String[] args) {
-        try (Scanner myObj = new Scanner(System.in)) {
-            System.out.println("Enter Username:");
-
-            String userName = myObj.nextLine();
-            System.out.println("Username is: " + userName);
-        }
+        LocalDate myObj = LocalDate.now();
+        System.out.println(myObj);
     }
 }
