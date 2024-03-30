@@ -8,6 +8,6 @@ public class ArrList {
         anime.add("Black Clover");
         anime.add("Solo Leveling");
 
-        System.out.println(anime);
+        System.out.println(anime.get(3));
     }
 }
