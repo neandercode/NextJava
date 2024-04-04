@@ -7,6 +7,8 @@ public class Hashset {
         food.add("Indian");
         food.add("Jamaican");
         food.add("Tex Mex");
-        System.out.println(food.contains("Indian"));
+        for (String i : food) {
+            System.out.println(i);
+        }
     }
 }
