@@ -10,6 +10,8 @@ public class It {
         cars.add("Toyota");
 
         Iterator<String> it = cars.iterator();
+        while(it.hasNext()) {
         System.out.println(it.next());
+        }
     }
 }
